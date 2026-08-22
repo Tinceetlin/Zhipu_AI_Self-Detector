@@ -9,11 +9,9 @@ The primary objective of this study is to evaluate the capability of the GLM 5.2
 ## 📁 Repository Structure
 
 ```text
-├── dataset/
-│   ├── human_abstracts.csv          # 1,000 baseline human-written abstracts (Control)
-│   ├── ai_paraphrase.csv            # 1,000 AI-paraphrased abstracts (Dataset #1)
-│   ├── ai_rewrite.csv               # 1,000 AI-rewritten abstracts (Dataset #2)
-│   └── ai_generated.csv             # 1,000 purely AI-generated abstracts (Dataset #3)
+├── DATASET/
+│   ├── MASTER RUNS.xlsx          # 20.000 evaluations from 5 runs * (1.000 abstracts human-written + 1.000 AI-Generated + 1.000 AI-Rewrite + 1.000 AI-Paraphrase)
+│   ├── HASIL KLASIFIKASI.xlsx    # 1.000 abstracts human-written + 1.000 AI-Generated + 1.000 AI-Rewrite + 1.000 AI-Paraphrase
 ├── src/
 │   ├── prompting_framework.py       # Python script for black-box confidence prompting
 │   ├── metrics_evaluation.py        # Accuracy, F1, AUC-ROC, Brier Score, and ECE calculations
@@ -69,32 +67,6 @@ The performance and reliability of the self-detection mechanism are rigorously v
 *   **Cochran’s Q Test:** Evaluates the binary detection accuracy significance across the 3 manipulation levels.
 *   **Friedman Test:** Assesses variance differences in continuous verbalized confidence scores.
 *   **Post-hoc McNemar Test (with Holm Correction):** Performs pairwise error-rate comparisons if the global null hypothesis ($H_0$) is rejected.
-
----
-
-## 🚀 How to Run the Project
-
-### Prerequisites
-Ensure you have Python 3.10+ installed. Clone this repository and install the dependencies:
-```bash
-git clone https://github.com
-cd Zhipu_AI_Self-Detector
-pip install -r requirements.txt
-```
-
-### Execution Steps
-1. **Run text extraction and API prompting:**
-   ```bash
-   python src/prompting_framework.py --api_key YOUR_ZHIPU_AI_KEY
-   ```
-2. **Compute classification and calibration metrics:**
-   ```bash
-   python src/metrics_evaluation.py
-   ```
-3. **Execute the statistical validation suite:**
-   ```bash
-   python src/statistical_tests.py
-   ```
 
 ---
 
