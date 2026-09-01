@@ -8,18 +8,19 @@ The primary objective of this study is to evaluate the capability of the GLM 5.2
 
 ## 📁 Repository Structure
 
-```text
+``text
 ├── DATASET/
 │   ├── MASTER RUNS.xlsx          # 20.000 evaluations from 5 runs * (1.000 abstracts human-written + 1.000 AI-Generated + 1.000 AI-Rewrite + 1.000 AI-Paraphrase)
 │   ├── HASIL KLASIFIKASI.xlsx    # 1.000 abstracts human-written + 1.000 AI-Generated + 1.000 AI-Rewrite + 1.000 AI-Paraphrase
-├── src/
-│   ├── prompting_framework.py       # Python script for black-box confidence prompting
-│   ├── metrics_evaluation.py        # Accuracy, F1, AUC-ROC, Brier Score, and ECE calculations
-│   └── statistical_tests.py         # Cochran’s Q, Friedman, and McNemar-Holm post-hoc tests
+├── Prompt_engineering/
+│   ├── AI-Generated_prompt.txt       # prompt script for generating a new abstract using the abstract title as a reference (AI-Generated) 
+│   ├── AI-Paraphrase_prompt.txt      # prompt script for creating a new abstract by paraphrasing the original abstract (AI-Paraphrase)
+│   └── AI-Rewrite_prompt.txt         # prompt script for creating a new abstract by rewriting the original while retaining the data and foreign terms (AI-Rewrite)
+│   └── self-detection_prompt.txt     # prompt script for performing self-detection (classification)
 ├── results/
-│   ├── reliability_diagrams/        # Saved calibration plots
-│   └── statistical_outputs/         # Text logs of statistical test results
-└── README.md                        # Project documentation
+│   ├── Cochran's-Q Test        # Cochran's-Q Test result
+│   └── Post-hoc McNemar        # Post-hoc McNemar
+└── README.md                   # Project documentation
 ```
 
 ---
