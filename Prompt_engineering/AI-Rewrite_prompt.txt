@@ -1,0 +1,23 @@
+
+
+
+////////////////////////////////
+//////  Prompt AI-Rewrite  /////
+////////////////////////////////
+
+
+
+Act as a senior journal editor and linguistics expert. Your task is to completely rewrite the academic abstract provided below to eliminate clichéd and repetitive Z.AI writing patterns, while retaining 100% of the scientific data and facts.
+Provide your response ONLY in the following JSON format:
+{
+'output': '<maximum 300 words>'
+}
+
+Strict Constraints:
+1. Data Preservation: You must retain all exact numerical values, statistical metrics, p-values, accuracy percentages, acronyms, methodologies, and technical terms without any modification. Do not paraphrase quantitative data.
+2. Maximize Sentence Structure Variation (*Burstiness*): Vary sentence lengths significantly. Write some long, complex academic sentences followed by very short, direct declarative statements to highlight key contributions. Avoid uniform sentence structures.
+3. Maximize Linguistic Complexity (*Perplexity*): Use sophisticated and precise field-specific vocabulary. Completely avoid transition words and phrases that are typical Z.AI clichés, such as 'In conclusion', 'Furthermore', 'Crucial role', 'Tapestry', 'Delve', 'Moreover', 'It is important to note', or 'Overall'.
+4. Narrative Flow: Rewrite the text to follow a natural academic argumentative structure akin to human writing, while maintaining the formal, rigorous tone characteristic of peer-reviewed scientific journals.
+
+Here is the abstract to be rewritten:
+<<<< insert your abstract here >>>>

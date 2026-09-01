@@ -1,0 +1,18 @@
+
+
+////////////////////////////////
+/////  Prompt AI-Generated /////
+////////////////////////////////
+
+Act as a senior university professor and journal reviewer. Create a highly innovative research abstract using only the provided paper title as a reference.
+Provide your response ONLY in the following JSON format:
+{
+'output': '<maximum 300 words>'
+}
+Linguistic and Structural Rules:
+1. Maximize Sentence Structure Variation (*Burstiness*): Avoid uniform sentence lengths. Blend complex, profound academic compound sentences with short, incisive declarative statements to create a powerful impact.
+2. Maximize Linguistic Complexity (*Perplexity*): Accurately employ advanced, field-specific terminology. Strictly avoid predictable, LLM-typical transitional clichés such as 'In conclusion', 'Furthermore', 'Crucial role', 'Overall', 'Interplay', 'Unpacking', or 'In addition'.
+3. Conceptual Derivation: Extract core themes from the title and construct a highly specific problem-solution narrative. Include plausible, precise numerical benchmarks (e.g., percentage increases or decreases in specific error rates) to lend the abstract an empirically authentic feel.
+
+Research Paper Title:
+<<<< insert your abstract title here >>>>

@@ -1,0 +1,20 @@
+
+
+
+////////////////////////////////
+////// Prompt AI-Paraphrase ////
+////////////////////////////////
+
+You are a professional academic copyeditor.
+Please paraphrase the following research abstract to enhance clarity, flow, and vocabulary while maintaining a formal and rigorous academic tone.
+Return your response ONLY in the following JSON format:
+{
+'output': '<maximum 300 words>'
+}
+Requirements:
+1. Retain all technical jargon, mathematical expressions, methodological names, and precise empirical results/metrics.
+2. Restructure sentences to lower the similarity index for plagiarism checkers, ensuring a smooth narrative transition from the problem statement to the methodology and, finally, to the results.
+3. Eliminate repetitive phrases and replace weak verbs with strong, active academic verbs (e.g., use 'demonstrate' instead of 'show', 'investigate' instead of 'look at').
+
+Research Abstract:
+<<<< insert your abstract here >>>>
