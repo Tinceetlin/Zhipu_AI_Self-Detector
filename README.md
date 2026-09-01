@@ -8,7 +8,7 @@ The primary objective of this study is to evaluate the capability of the GLM 5.2
 
 ## 📁 Repository Structure
 
-``text
+```text
 ├── DATASET/
 │   ├── MASTER RUNS.xlsx          # 20.000 evaluations from 5 runs * (1.000 abstracts human-written + 1.000 AI-Generated + 1.000 AI-Rewrite + 1.000 AI-Paraphrase)
 │   ├── HASIL KLASIFIKASI.xlsx    # 1.000 abstracts human-written + 1.000 AI-Generated + 1.000 AI-Rewrite + 1.000 AI-Paraphrase
