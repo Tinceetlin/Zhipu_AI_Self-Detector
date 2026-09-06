@@ -9,9 +9,9 @@ The primary objective of this study is to evaluate the capability of the GLM 5.2
 ## 📁 Repository Structure
 
 ```text
-├── DATASET/
-│   ├── MASTER RUNS.xlsx          # 20.000 evaluations from 5 runs * (1.000 abstracts human-written + 1.000 AI-Generated + 1.000 AI-Rewrite + 1.000 AI-Paraphrase)
-│   ├── HASIL KLASIFIKASI.xlsx    # 1.000 abstracts human-written + 1.000 AI-Generated + 1.000 AI-Rewrite + 1.000 AI-Paraphrase
+├── dataset/
+│   ├── classification_result.xlsx    # 20.000 evaluations from 5 runs * 4000 abstracts
+│   ├── evaluation_result.xlsx    # Selective Averaging from 20,000 evaluation 
 ├── Prompt_engineering/
 │   ├── AI-Generated_prompt.txt       # prompt script for generating a new abstract using the abstract title as a reference (AI-Generated) 
 │   ├── AI-Paraphrase_prompt.txt      # prompt script for creating a new abstract by paraphrasing the original abstract (AI-Paraphrase)
