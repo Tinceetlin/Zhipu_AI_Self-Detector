@@ -10,8 +10,9 @@ The primary objective of this study is to evaluate the capability of the GLM 5.2
 
 ```text
 ├── dataset/
-│   ├── classification_result.xlsx    # 20.000 evaluations from 5 runs * 4000 abstracts
-│   ├── evaluation_result.xlsx    # Selective Averaging from 20,000 evaluation 
+│   ├── classification_result.xlsx    # 4,000 abstracts aggregated from 20,000 evaluations 
+│   ├── evaluation_result.xlsx        # 20,000 evaluations obtained from 4,000 abstracts × 5 runs
+|   ├── tbl_transformations.xlsx      # 1,000 control abstracts + 3,000 abstracts generated or modified by Z.AI
 ├── Prompt_engineering/
 │   ├── AI-Generated_prompt.txt       # prompt script for generating a new abstract using the abstract title as a reference (AI-Generated) 
 │   ├── AI-Paraphrase_prompt.txt      # prompt script for creating a new abstract by paraphrasing the original abstract (AI-Paraphrase)
