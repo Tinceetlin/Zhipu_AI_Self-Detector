@@ -43,14 +43,39 @@ This study employs a **within-subject / repeated measures design** leveraging a 
 Since internal token log-probabilities are inaccessible via the Zhipu AI black-box API, we extract the proxy probabilities using a constrained **verbalized confidence score** prompt template:
 
 ```text
-[System Prompt]
-You are a highly objective text analysis system. Analyze the following text and determine if it was authored by a human or generated/manipulated by an AI model.
+////////////////////////////////
+/////Prompt Self-Detection /////
+////////////////////////////////
 
-You MUST respond strictly in the following format and provide exact decimal values:
-confidence AI= [Value between 0-1]
-confidence Human= [Value between 0-1]
+You are acting as a Z.AI text detector.
+Your task is to analyze the following research abstract and determine whether it was written by a non-Z.AI source or generated/modified using Z.AI.
 
-Constraint: The sum of confidence AI and confidence Human must exactly equal 1.0. Do not include any other text, explanation, or markdown formatting.
+Definitions:
+non-Z.AI: An abstract written by a non-Z.AI source.
+Z.AI: An abstract generated, paraphrased, or rewritten using a Z.AI model.
+
+Base your analysis on linguistic characteristics, writing style, sentence structure, coherence, consistency, word choice, and other relevant textual patterns that may indicate whether the abstract was created by a non-Z.AI source or generated/modified by Z.AI.
+
+Perform the test 5 times. For each test result, provide a response ONLY in the following JSON format:
+
+{
+"run": 1,
+"prediction": "non-Z.AI or Z.AI",
+"confidence_non-zai": <number between 0.0000 and 1.0000>,
+"confidence_zai": <number between 0.0000 and 1.0000>,
+"reason": "<maximum 300 words>"
+}
+
+Requirements:
+* confidence_non-zai and confidence_zai must be decimal numbers with exactly four digits after the decimal point (e.g., 0.8734; 0.1356; 0.5078).
+* confidence_non-zai + confidence_zai must equal 1.000 (with a rounding tolerance of ±0.001).
+* confidence_non-zai represents your level of confidence that the abstract was written by a non-Z.AI source.
+* confidence_zai represents your level of confidence that the abstract was generated or modified using Z.AI.
+* prediction must correspond to the class with the higher confidence score.
+* Do not include any explanations, comments, or additional text outside the JSON object.
+
+Research Abstract:
+<<< insert your abstract here >>>
 ```
 
 ---
