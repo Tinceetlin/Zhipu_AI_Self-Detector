@@ -38,7 +38,7 @@ This study employs a **within-subject / repeated measures design** leveraging a 
 
 ---
 
-## 🤖 Black-Box Confidence Prompting
+## 🤖 Black-Box Self-Detection Prompting
 
 Since internal token log-probabilities are inaccessible via the Zhipu AI black-box API, we extract the proxy probabilities using a constrained **verbalized confidence score** prompt template:
 
@@ -64,7 +64,7 @@ The performance and reliability of the self-detection mechanism are rigorously v
 *   **Calibration Quality:** **Brier Score** and **Expected Calibration Error (ECE)** to assess the alignment between verbalized confidence scores and empirical correctness, complemented by **Reliability Diagrams**.
 
 ### 2. Stability & Consistency Analysis
-*   Standard Deviation ($SD$), Prediction Entropy, and Prediction Consistency across iterative API calls.
+*   Standard Deviation ($SD$) and Prediction Entropy across iterative API calls.
 
 ### 3. Statistical Significance Testing
 *   **Cochran’s Q Test:** Evaluates the binary detection accuracy significance across the 3 manipulation levels.
