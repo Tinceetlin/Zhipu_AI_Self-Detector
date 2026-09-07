@@ -18,9 +18,10 @@ The primary objective of this study is to evaluate the capability of the GLM 5.2
 │   ├── AI-Paraphrase_prompt.txt      # prompt script for creating a new abstract by paraphrasing the original abstract (AI-Paraphrase)
 │   └── AI-Rewrite_prompt.txt         # prompt script for creating a new abstract by rewriting the original while retaining the data and foreign terms (AI-Rewrite)
 │   └── self-detection_prompt.txt     # prompt script for performing self-detection (classification)
-├── results/
-│   ├── Cochran's-Q Test        # Cochran's-Q Test result
-│   └── Post-hoc McNemar        # Post-hoc McNemar
+├── statistical_test/
+│   ├── Cochran Q                     # Cochran's-Q Test data and python source code
+|   └── McNemar                       # Post-hoc McNemar data and python source code
+|   └── Friedman                      # Friendman Test data and python source code
 └── README.md                   # Project documentation
 ```
 
