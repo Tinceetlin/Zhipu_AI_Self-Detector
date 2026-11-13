@@ -182,7 +182,7 @@ Cite the paper once it is published; until then, cite the archived release.
   year      = {2026},
   publisher = {P3M Politeknik Negeri Banjarmasin},
   issn      = {2598-3288},
-  doi       = {FILL IN}
+  doi       = {https://doi.org/10.5281/zenodo.8475}
 }
 
 @software{sir2026zhipu_self_detector,
@@ -191,7 +191,7 @@ Cite the paper once it is published; until then, cite the archived release.
   year      = {2026},
   version   = {v1.0.0},
   publisher = {Zenodo},
-  doi       = {FILL IN},
+  doi       = {https://doi.org/10.5281/zenodo.8475},
   url       = {https://github.com/Tinceetlin/Zhipu_AI_Self-Detector}
 }
 ```
